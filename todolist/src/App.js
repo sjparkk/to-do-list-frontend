@@ -56,7 +56,7 @@ class App extends React.Component {
                     onCreate={this.handleCreate}
                     onKeyPress={this.handleKeyPress} />
             )}>
-                <TodoItemList />
+                <TodoItemList todos={this.state.todos} />
             </TodoListTemplate>
         );
     }
